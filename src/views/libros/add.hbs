@@ -1,0 +1,19 @@
+<div class="container p-4">
+    <div class="col-md-4 mx-auto">
+        <div class="card">
+            <div class="card-body">
+                <h1>Catálogo de Libros</h1>
+                <form action="/libros/add" method="POST">
+                    <label for="titulo">Titulo</label><br>
+                    <input type="text" name="tlibro" id="titulo" autofocus required><br>
+                    <label for="autor">Autor</label><br>
+                    <input type="text" name="tautor" id="autor" required><br>
+                    <label for="descripcion">Descripción</label><br>
+                    <textarea name="tdescripcion" id="descripcion" cols="30" rows="10" required></textarea><br><br>
+                    <input type="submit" id="submit" value="Enviar" class="btn btn-success">
+                    <input type="reset" id="reset" value="Limpiar" class="btn btn-danger">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

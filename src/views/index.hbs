@@ -1,0 +1,18 @@
+<div class="container p-4">
+    <div class="col-md-4 mx-auto">
+        <div class="card">
+            <div class="card-body text-center p-4">
+                <form action="/" method="POST">
+                    <h4>Traductor</h4><br>
+                    <label for="palabra">Traduce una palabra Español -> Inglés</label><br><br>
+                    <input type="text" name="palabra" id="palabra" required><br><br>
+                    <button type="submit" class="btn btn-success">Enviar</button><br>
+                    <div class="container" id="salidatexto">
+                        <p class="m-4">{{string}}</p>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

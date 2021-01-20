@@ -1,0 +1,20 @@
+<div class="container p-4">
+    <div class="col-md-4 mx-auto">
+        <div class="card">
+            <div class="card-body">
+                <h1>Catálogo de Libros</h1>
+                <form action="/libros/edit/{{libros.id_libro}}" method="POST">
+                    <label for="titulo">Titulo</label><br>
+                    <input type="text" value="{{libros.tlibro}}" name="tlibro" id="titulo" autofocus><br>
+                    <label for="autor">Autor</label><br>
+                    <input type="text" value="{{libros.tautor}}" name="tautor" id="autor"><br>
+                    <label for="descripcion">Descripción</label><br>
+                    <textarea name="tdescripcion" id="descripcion" cols="30"
+                        rows="10">{{libros.tdescripcion}}</textarea><br><br>
+                    <input type="submit" id="submit" value="Editar" class="btn btn-success">
+                    <input type="reset" id="reset" value="Limpiar" class="btn btn-danger">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
